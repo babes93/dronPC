@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane layoutX="1.0" layoutY="25.0" prefHeight="308.0" prefWidth="260.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Polaczenie">
+               <content>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="31.0" text="Port:" />
+                        <Label layoutX="14.0" layoutY="75.0" text="Baud:" />
+                        <TextField fx:id="PortTextField" layoutX="54.0" layoutY="27.0" prefHeight="25.0" prefWidth="194.0" />
+                        <TextField fx:id="BaudTextField" layoutX="54.0" layoutY="71.0" prefHeight="25.0" prefWidth="195.0" />
+                        <Button fx:id="PolaczButton" layoutX="14.0" layoutY="111.0" mnemonicParsing="false" text="Polacz" />
+                        <Button fx:id="RozlaczButton" layoutX="101.0" layoutY="111.0" mnemonicParsing="false" text="Rozlacz" />
+                        <Button fx:id="WyslijButton" layoutX="189.0" layoutY="188.0" mnemonicParsing="false" text="Wyslij" />
+                        <TextField fx:id="WyslijTextField" layoutX="175.0" layoutY="144.0" prefHeight="25.0" prefWidth="74.0" />
+                        <Label layoutX="14.0" layoutY="148.0" text="Pelna ramka z komedna" />
+                        <Button fx:id="ZapiszConfButton" layoutX="18.0" layoutY="188.0" mnemonicParsing="false" text="Zapisz Konfiguracje" />
+                        <Button fx:id="WczytajConfButton" layoutX="18.0" layoutY="230.0" mnemonicParsing="false" text="Wczytaj Konfiguracje" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Sterowanie">
+               <content>
+                  <AnchorPane prefHeight="606.0" prefWidth="260.0">
+                     <children>
+                        <Button fx:id="PrzodButton" layoutX="73.0" layoutY="91.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="64.0" text="Przód" />
+                        <Button fx:id="TylButton" layoutX="74.0" layoutY="215.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="64.0" text="Tył" />
+                        <Button fx:id="LewoButton" layoutX="14.0" layoutY="148.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="58.0" text="Lewo" />
+                        <Button fx:id="PrawoButton" layoutX="136.0" layoutY="145.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="58.0" text="Prawo" />
+                        <Button fx:id="GoraButton" layoutX="197.0" layoutY="90.0" mnemonicParsing="false" prefHeight="49.0" prefWidth="55.0" text="Góra" />
+                        <Button fx:id="DolButton" layoutX="193.0" layoutY="214.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="55.0" text="Dół" />
+                        <Button fx:id="SkretPrawoButton" layoutX="143.0" layoutY="22.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="58.0" text="Skret Prawo" textAlignment="JUSTIFY" wrapText="true" />
+                        <Button fx:id="SkretLewoButton" layoutX="21.0" layoutY="20.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="55.0" text="Skret Lewo" wrapText="true" />
+                        <Button fx:id="StopButton" layoutX="79.0" layoutY="148.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="52.0" text="Stop" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <AnchorPane layoutX="261.0" prefHeight="645.0" prefWidth="388.0">
+         <children>
+            <TextField fx:id="AlfaTextField" layoutX="70.0" layoutY="544.0" prefHeight="25.0" prefWidth="66.0" />
+            <TextField fx:id="GammaTextField" layoutX="77.0" layoutY="606.0" prefHeight="25.0" prefWidth="58.0" />
+            <Label layoutX="37.0" layoutY="548.0" text="Alfa:" />
+            <TextField fx:id="BetaTextField" layoutX="72.0" layoutY="577.0" prefHeight="25.0" prefWidth="64.0" />
+            <Label layoutX="36.0" layoutY="581.0" text="Beta:" />
+            <Label layoutX="18.0" layoutY="610.0" text="Gamma:" />
+            <TextField fx:id="AkcelerometrWypadkowyText" layoutX="175.0" layoutY="516.0" prefHeight="25.0" prefWidth="65.0" />
+            <Label layoutX="39.0" layoutY="520.0" text="Akcelerometr:" />
+            <ImageView fx:id="ImageDron" fitHeight="236.0" fitWidth="205.0" layoutX="155.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Dron%20Góra.PNG" />
+               </image>
+            </ImageView>
+            <TextField fx:id="AccXText" layoutX="175.0" layoutY="544.0" prefHeight="25.0" prefWidth="65.0" />
+            <TextField fx:id="AccYText" layoutX="175.0" layoutY="577.0" prefHeight="25.0" prefWidth="65.0" />
+            <TextField fx:id="AccZText" layoutX="175.0" layoutY="606.0" prefHeight="25.0" prefWidth="65.0" />
+            <Label layoutX="147.0" layoutY="548.0" text="X=" />
+            <Label layoutX="147.0" layoutY="581.0" text="Y=" />
+            <Label layoutX="147.0" layoutY="610.0" text="Z=" />
+            <Box fx:id="DronProstopadloscian" depth="100.0" height="35.0" layoutX="252.0" layoutY="440.0" rotate="180.0" width="125.0">
+               <rotationAxis>
+                  <Point3D y="1.0" z="1.0" />
+               </rotationAxis></Box>
+            <Label layoutX="6.0" layoutY="56.0" text="PWM:" />
+            <Label layoutX="369.0" layoutY="56.0" text="PWM:" />
+            <Label layoutX="2.0" layoutY="280.0" text="PWM:" />
+            <Label layoutX="369.0" layoutY="280.0" text="PWM:" />
+            <TextField fx:id="PWM_S1_TEXT" layoutX="45.0" layoutY="52.0" prefHeight="25.0" prefWidth="81.0" />
+            <TextField fx:id="PWM_S3_TEXT" layoutX="41.0" layoutY="276.0" prefHeight="25.0" prefWidth="81.0" />
+            <TextField fx:id="PWM_S2_TEXT" layoutX="406.0" layoutY="52.0" prefHeight="25.0" prefWidth="86.0" />
+            <TextField fx:id="PWM_S4_TEXT" layoutX="406.0" layoutY="276.0" prefHeight="25.0" prefWidth="86.0" />
+            <Label layoutX="14.0" layoutY="14.0" text="Silnik nr. 1" />
+            <Label layoutX="15.0" layoutY="238.0" text="Silnik nr.3" />
+            <Label layoutX="388.0" layoutY="14.0" text="Silnik nr. 2" />
+            <Label layoutX="388.0" layoutY="238.0" text="Silnik nr. 4" />
+            <Label layoutX="3.0" layoutY="84.0" text="Składowa H:" />
+            <Label layoutX="2.0" layoutY="110.0" text="e alfa:" />
+            <Label layoutX="2.0" layoutY="142.0" text="Reg alfa:" />
+            <Label layoutY="171.0" text="e beta:" />
+            <Label layoutY="200.0" text="Reg beta:" />
+            <TextField fx:id="S1_H" layoutX="84.0" layoutY="80.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField fx:id="E_ALFA_S1" layoutX="43.0" layoutY="106.0" prefHeight="25.0" prefWidth="81.0" />
+            <TextField fx:id="REG_ALFA_S1" layoutX="60.0" layoutY="138.0" prefHeight="25.0" prefWidth="64.0" />
+            <TextField fx:id="E_BETA_S1" layoutX="50.0" layoutY="167.0" prefHeight="25.0" prefWidth="74.0" />
+            <TextField fx:id="REG_BETA_S1" layoutX="66.0" layoutY="196.0" prefHeight="25.0" prefWidth="58.0" />
+            <TextField fx:id="S3_H" layoutX="84.0" layoutY="310.0" prefHeight="25.0" prefWidth="39.0" />
+            <TextField fx:id="E_ALFA_S3" layoutX="52.0" layoutY="340.0" prefHeight="25.0" prefWidth="74.0" />
+            <TextField fx:id="REG_ALFA_S3" layoutX="60.0" layoutY="372.0" prefHeight="25.0" prefWidth="64.0" />
+            <TextField fx:id="E_BETA_S3" layoutX="52.0" layoutY="403.0" prefHeight="25.0" prefWidth="74.0" />
+            <TextField fx:id="REG_BETA_S3" layoutX="66.0" layoutY="440.0" prefHeight="25.0" prefWidth="58.0" />
+            <Label layoutX="1.0" layoutY="314.0" text="Składowa H:" />
+            <Label layoutX="9.0" layoutY="344.0" text="e alfa:" />
+            <Label layoutX="3.0" layoutY="376.0" text="Reg alfa:" />
+            <Label layoutX="4.0" layoutY="407.0" text="e beta:" />
+            <Label layoutX="1.0" layoutY="444.0" text="Reg beta:" />
+            <TextField fx:id="S2_H" layoutX="451.0" layoutY="80.0" prefHeight="25.0" prefWidth="41.0" />
+            <TextField fx:id="E_ALFA_S2" layoutX="411.0" layoutY="106.0" prefHeight="25.0" prefWidth="81.0" />
+            <TextField fx:id="REG_ALFA_S2" layoutX="427.0" layoutY="138.0" prefHeight="25.0" prefWidth="67.0" />
+            <TextField fx:id="E_BETA_S2" layoutX="412.0" layoutY="167.0" prefHeight="25.0" prefWidth="81.0" />
+            <TextField fx:id="REG_BETA_S2" layoutX="430.0" layoutY="196.0" prefHeight="25.0" prefWidth="64.0" />
+            <Label layoutX="368.0" layoutY="84.0" text="Składowa H:" />
+            <Label layoutX="369.0" layoutY="110.0" text="e alfa:" />
+            <Label layoutX="367.0" layoutY="142.0" text="Reg alfa:" />
+            <Label layoutX="367.0" layoutY="171.0" text="e beta:" />
+            <Label layoutX="365.0" layoutY="200.0" text="Reg beta:" />
+            <TextField fx:id="S4_H" layoutX="451.0" layoutY="310.0" prefHeight="25.0" prefWidth="41.0" />
+            <TextField fx:id="E_ALFA_S4" layoutX="411.0" layoutY="340.0" prefHeight="25.0" prefWidth="81.0" />
+            <TextField fx:id="REG_ALFA_S4" layoutX="427.0" layoutY="372.0" prefHeight="25.0" prefWidth="67.0" />
+            <TextField fx:id="E_BETA_S4" layoutX="418.0" layoutY="403.0" prefHeight="25.0" prefWidth="74.0" />
+            <TextField fx:id="REG_BETA_S4" layoutX="429.0" layoutY="438.0" prefHeight="25.0" prefWidth="65.0" />
+            <Label layoutX="368.0" layoutY="314.0" text="Składowa H:" />
+            <Label layoutX="369.0" layoutY="344.0" text="e alfa:" />
+            <Label layoutX="367.0" layoutY="376.0" text="Reg alfa:" />
+            <Label layoutX="367.0" layoutY="407.0" text="e beta:" />
+            <Label layoutX="365.0" layoutY="442.0" text="Reg beta:" />
+            <ProgressBar fx:id="S2_prog" layoutX="404.0" layoutY="110.0" prefWidth="200.0" progress="0.0" rotate="-90.0" />
+            <ProgressBar fx:id="S4_prog" layoutX="404.0" layoutY="352.0" prefWidth="200.0" progress="0.0" rotate="-90.0" />
+            <ProgressBar fx:id="S1_prog" layoutX="36.0" layoutY="110.0" prefWidth="200.0" progress="0.0" rotate="-90.0" />
+            <ProgressBar fx:id="S3_prog" layoutX="36.0" layoutY="352.0" prefWidth="200.0" progress="0.0" rotate="-90.0" />
+            <ProgressIndicator fx:id="S4_progind" layoutX="450.0" layoutY="233.0" progress="0.0" />
+            <ProgressIndicator fx:id="S3_progind" layoutX="73.0" layoutY="233.0" progress="0.0" />
+            <ProgressIndicator fx:id="S1_progind" layoutX="75.0" layoutY="11.0" progress="0.0" />
+            <ProgressIndicator fx:id="S2_progind" layoutX="450.0" layoutY="11.0" progress="0.0" />
+            <Label layoutX="252.0" layoutY="520.0" text="Magnetometr:" />
+            <Label layoutX="250.0" layoutY="548.0" text="X=" />
+            <Label layoutX="250.0" layoutY="582.0" text="Y=" />
+            <Label layoutX="250.0" layoutY="610.0" text="Z=" />
+            <TextField fx:id="MAGNET_X" layoutX="269.0" layoutY="544.0" prefHeight="25.0" prefWidth="64.0" />
+            <TextField fx:id="MAGNET_Y" layoutX="269.0" layoutY="578.0" prefHeight="25.0" prefWidth="64.0" />
+            <TextField fx:id="MAGNET_Z" layoutX="269.0" layoutY="606.0" prefHeight="25.0" prefWidth="64.0" />
+            <Label layoutX="145.0" layoutY="520.0" text="W=" />
+            <Label layoutX="349.0" layoutY="520.0" text="Barometr:" />
+            <Label layoutX="349.0" layoutY="548.0" text="T=" />
+            <Label layoutX="349.0" layoutY="581.0" text="P=" />
+            <Label layoutX="341.0" layoutY="610.0" text="Wys=" />
+            <TextField fx:id="BARO_T" layoutX="369.0" layoutY="544.0" prefHeight="25.0" prefWidth="67.0" />
+            <TextField fx:id="BARO_P" layoutX="369.0" layoutY="578.0" prefHeight="25.0" prefWidth="67.0" />
+            <TextField fx:id="BARO_W" layoutX="380.0" layoutY="606.0" prefHeight="25.0" prefWidth="56.0" />
+         </children>
+      </AnchorPane>
+      <ListView fx:id="KonsolaLista" layoutX="1.0" layoutY="331.0" prefHeight="315.0" prefWidth="260.0" />
+      <MenuBar layoutX="1.0" prefHeight="25.0" prefWidth="260.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Ustawienia">
+            <items>
+              <MenuItem fx:id="MenuUstawieniaRegulatory" mnemonicParsing="false" text="Regulatory" />
+                  <MenuItem fx:id="MenuUstawieniaOdswiezaneDane" mnemonicParsing="false" text="Odswiezane Dane" />
+                  <MenuItem fx:id="MenuUstawieniaFiltry" mnemonicParsing="false" text="Filtry" />
+                  <MenuItem fx:id="MenuUstawieniaTestSilniki" mnemonicParsing="false" text="Test Silniki" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Wykresy">
+              <items>
+                  <MenuItem fx:id="MenuWykresyAnalizatorLogow" mnemonicParsing="false" text="Analizator Logow" />
+                  <MenuItem fx:id="MenuWykresySilniki" mnemonicParsing="false" text="Silniki" />
+                <MenuItem fx:id="MenuWykresyDane" mnemonicParsing="false" text="Dane " />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem fx:id="MenuPomocInformacje" mnemonicParsing="false" text="Informacje" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

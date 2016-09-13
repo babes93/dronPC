@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1087.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AnalizatorLogowController">
+   <children>
+      <Button fx:id="ButtonWybierzKatalog" layoutX="229.0" layoutY="10.0" mnemonicParsing="false" text="Wybierz Katalog" />
+      <ListView fx:id="ListViewZawartoscPliku" layoutX="15.0" layoutY="117.0" prefHeight="256.0" prefWidth="154.0" />
+      <ListView fx:id="ListViewWykres" layoutX="188.0" layoutY="119.0" prefHeight="256.0" prefWidth="154.0" />
+      <ComboBox fx:id="ComboBoxPliki" layoutX="101.0" layoutY="10.0" prefHeight="25.0" prefWidth="126.0" />
+      <Label layoutX="14.0" layoutY="14.0" text="Plik z logami:" />
+      <Label layoutX="17.0" layoutY="93.0" text="Zawartosc Pliku:" />
+      <Label layoutX="188.0" layoutY="95.0" text="Wykres:" />
+      <Button fx:id="ButtonDodaj" layoutX="12.0" layoutY="383.0" mnemonicParsing="false" text="Dodaj do Wykresu&gt;&gt;" />
+      <Button fx:id="ButtonUsun" layoutX="199.0" layoutY="384.0" mnemonicParsing="false" text="&lt;&lt;Usun z Wykresu" />
+      <Pane fx:id="PaneWykres" layoutX="346.0" prefHeight="584.0" prefWidth="741.0" />
+      <Label layoutX="346.0" layoutY="606.0" text="Od:" />
+      <Label layoutX="346.0" layoutY="636.0" text="Do:" />
+      <Slider fx:id="SliderOd" layoutX="429.0" layoutY="608.0" prefHeight="14.0" prefWidth="581.0" />
+      <Slider fx:id="SliderDo" layoutX="430.0" layoutY="638.0" prefHeight="14.0" prefWidth="581.0" />
+      <TextField fx:id="SliderOdMinText" layoutX="365.0" layoutY="603.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="SliderDoMinText" layoutX="365.0" layoutY="633.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="SliderOdMaxText" layoutX="1019.0" layoutY="603.0" prefHeight="25.0" prefWidth="59.0" />
+      <TextField fx:id="SliderDoMaxText" layoutX="1019.0" layoutY="632.0" prefHeight="25.0" prefWidth="59.0" />
+      <Label layoutX="334.0" layoutY="669.0" text="Zakres od:" />
+      <Label layoutX="493.0" layoutY="669.0" text="Zakres do:" />
+      <TextField fx:id="ZakresOdText" layoutX="408.0" layoutY="665.0" prefHeight="25.0" prefWidth="85.0" />
+      <TextField fx:id="ZakresDoText" layoutX="568.0" layoutY="665.0" prefHeight="25.0" prefWidth="85.0" />
+      <Button fx:id="WyswietlZakresButton" layoutX="669.0" layoutY="665.0" mnemonicParsing="false" text="Wyswietl Zakres" />
+      <Button fx:id="ButtonWybierzPlik" layoutX="248.0" layoutY="46.0" mnemonicParsing="false" text="Wybierz Plik" />
+      <Button fx:id="PlikiMatLabButton" layoutX="13.0" layoutY="632.0" mnemonicParsing="false" text="Wygneruj pliki do MatLab-a" />
+      <Button fx:id="ZmienSciezkeButton" layoutX="216.0" layoutY="633.0" mnemonicParsing="false" text="Zmien Sciezke" />
+      <Label layoutX="13.0" layoutY="669.0" text="Scieżka:" />
+      <TextField fx:id="SciezkaMatLabTextField" layoutX="55.0" layoutY="665.0" prefHeight="25.0" prefWidth="252.0" />
+      <Button fx:id="PlikiSciLabButton" layoutX="14.0" layoutY="602.0" mnemonicParsing="false" text="Wygeneruj pliki do SciLab-a" />
+   </children>
+</AnchorPane>

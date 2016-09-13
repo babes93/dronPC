@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="553.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.OdswiezanieDanychController">
+   <children>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="291.0" prefWidth="553.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Odswiezane i logowane Dane:" />
+            <CheckBox fx:id="CheckBoxOrientacja" layoutX="13.0" layoutY="240.0" mnemonicParsing="false" text="Orientacja Drona" />
+            <CheckBox fx:id="CheckBoxAkcelerometr" layoutX="307.0" layoutY="62.0" mnemonicParsing="false" text="Akcelerometr Składowe" />
+            <CheckBox fx:id="CheckBoxAkcelerometrW" layoutX="307.0" layoutY="85.0" mnemonicParsing="false" text="Akcelerometr Wypadkowy" />
+            <CheckBox fx:id="CheckBoxPWM" layoutX="12.0" layoutY="192.0" mnemonicParsing="false" text="PWM silników" />
+            <CheckBox fx:id="CheckBoxUchyby" layoutX="11.0" layoutY="166.0" mnemonicParsing="false" text="Uchyby" />
+            <CheckBox fx:id="CheckBoxSilnik1" layoutX="12.0" layoutY="64.0" mnemonicParsing="false" text="Silnik nr. 1" />
+            <CheckBox fx:id="CheckBoxSilnik2" layoutX="11.0" layoutY="87.0" mnemonicParsing="false" text="Silnik nr. 2" />
+            <CheckBox fx:id="CheckBoxSilnik3" layoutX="11.0" layoutY="112.0" mnemonicParsing="false" text="Silnik nr. 3" />
+            <CheckBox fx:id="CheckBoxSilnik4" layoutX="11.0" layoutY="138.0" mnemonicParsing="false" text="Silnik nr. 4" />
+            <CheckBox fx:id="CheckBoxRawy" layoutX="304.0" layoutY="189.0" mnemonicParsing="false" text="Surowe dane Acc i Gyro" />
+            <CheckBox fx:id="CheckBoxGyro" layoutX="306.0" layoutY="110.0" mnemonicParsing="false" text="Żyroskop" />
+            <CheckBox fx:id="CheckBoxMagnet" layoutX="306.0" layoutY="137.0" mnemonicParsing="false" text="Magnetometr" />
+            <CheckBox fx:id="CheckBoxBaro" layoutX="306.0" layoutY="163.0" mnemonicParsing="false" text="Barometr" />
+            <Button fx:id="ButtonZmienOdswiezanie" layoutX="171.0" layoutY="246.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="166.0" text="Zmien Odswiezanie" />
+            <CheckBox fx:id="CheckBoxS1Rate" layoutX="135.0" layoutY="63.0" mnemonicParsing="false" text="Silnik nr.1 Reg Rate" />
+            <CheckBox fx:id="CheckBoxS2Rate" layoutX="134.0" layoutY="88.0" mnemonicParsing="false" text="Silnik nr. 2 Reg Rate" />
+            <CheckBox fx:id="CheckBoxS3Rate" layoutX="132.0" layoutY="113.0" mnemonicParsing="false" text="Silnik nr.3 Reg Rate" />
+            <CheckBox fx:id="CheckBoxS4Rate" layoutX="131.0" layoutY="140.0" mnemonicParsing="false" text="Silnik nr.4 Reg Rate" />
+            <CheckBox fx:id="CheckBoxOrientacjaRate" layoutX="11.0" layoutY="261.0" mnemonicParsing="false" text="Predkosci Katowe" />
+            <Label layoutX="14.0" layoutY="40.0" text="Silniki:" />
+            <Label layoutX="308.0" layoutY="41.0" text="Czujniki:" />
+            <Label layoutX="14.0" layoutY="220.0" text="Orientacja i Przesuniecie:" />
+            <CheckBox fx:id="CheckBoxUchybyRate" layoutX="128.0" layoutY="165.0" mnemonicParsing="false" text="Uchyby Rate" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

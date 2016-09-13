@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="708.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerWykresy">
+   <children>
+      <Pane fx:id="WykresPane" layoutX="190.0" layoutY="1.0" prefHeight="530.0" prefWidth="517.0" />
+      <Pane layoutY="1.0" prefHeight="530.0" prefWidth="183.0">
+         <children>
+            <CheckBox fx:id="Alfa" layoutX="4.0" layoutY="33.0" mnemonicParsing="false" text="Alfa" />
+            <CheckBox fx:id="Beta" layoutX="54.0" layoutY="33.0" mnemonicParsing="false" text="Beta" />
+            <CheckBox fx:id="Gamma" layoutX="108.0" layoutY="33.0" mnemonicParsing="false" text="Gamma" />
+            <Label layoutX="2.0" layoutY="14.0" text="Katy Eulera:" />
+            <Label layoutX="4.0" layoutY="62.0" text="Żyroskop surowe dane:" />
+            <CheckBox fx:id="X_raw_gyro" layoutX="14.0" layoutY="87.0" mnemonicParsing="false" text="X" />
+            <CheckBox fx:id="Y_raw_gyro" layoutX="61.0" layoutY="87.0" mnemonicParsing="false" text="Y" />
+            <CheckBox fx:id="Z_raw_gyro" layoutX="113.0" layoutY="87.0" mnemonicParsing="false" text="Z" />
+            <Label layoutX="2.0" layoutY="114.0" text="Akcelerometr surowe dane:" />
+            <CheckBox fx:id="X_raw_acc" layoutX="14.0" layoutY="140.0" mnemonicParsing="false" text="X" />
+            <CheckBox fx:id="Y_raw_acc" layoutX="61.0" layoutY="140.0" mnemonicParsing="false" text="Y" />
+            <CheckBox fx:id="Z_raw_acc" layoutX="113.0" layoutY="140.0" mnemonicParsing="false" text="Z" />
+            <Label layoutX="4.0" layoutY="174.0" text="Żyroskop filtracja:" />
+            <CheckBox fx:id="X_gyro" layoutX="14.0" layoutY="198.0" mnemonicParsing="false" text="X" />
+            <CheckBox fx:id="Y_gyro" layoutX="61.0" layoutY="198.0" mnemonicParsing="false" text="Y" />
+            <CheckBox fx:id="Z_gyro" layoutX="113.0" layoutY="198.0" mnemonicParsing="false" text="Z" />
+            <Label layoutX="4.0" layoutY="229.0" text="Akcelerometr filtracja:" />
+            <CheckBox fx:id="X_acc" layoutX="14.0" layoutY="257.0" mnemonicParsing="false" text="X" />
+            <CheckBox fx:id="Y_acc" layoutX="61.0" layoutY="257.0" mnemonicParsing="false" text="Y" />
+            <CheckBox fx:id="Z_acc" layoutX="108.0" layoutY="257.0" mnemonicParsing="false" text="Z" />
+            <CheckBox fx:id="W_acc" layoutX="29.0" layoutY="286.0" mnemonicParsing="false" text="Wypadkowy" />
+            <Label layoutX="5.0" layoutY="316.0" text="Magnetometr:" />
+            <CheckBox fx:id="MAGNET_X" layoutX="14.0" layoutY="340.0" mnemonicParsing="false" text="X" />
+            <CheckBox fx:id="MAGNET_Y" layoutX="61.0" layoutY="340.0" mnemonicParsing="false" text="Y" />
+            <CheckBox fx:id="MAGNET_Z" layoutX="108.0" layoutY="340.0" mnemonicParsing="false" text="Z" />
+            <Label layoutX="2.0" layoutY="364.0" text="Barometr:" />
+            <CheckBox fx:id="BARO_T" layoutX="11.0" layoutY="388.0" mnemonicParsing="false" text="Temperatura" />
+            <CheckBox fx:id="BARO_P" layoutX="10.0" layoutY="411.0" mnemonicParsing="false" text="Cisnienie" />
+            <CheckBox fx:id="BARO_W" layoutX="9.0" layoutY="437.0" mnemonicParsing="false" text="Wysokos n.p.m." />
+            <Label layoutX="6.0" layoutY="462.0" text="Predkosci Katowe:" />
+            <CheckBox fx:id="CheckBoxAlfaRate" layoutY="486.0" mnemonicParsing="false" text="Alfa" />
+            <CheckBox fx:id="CheckBoxBetaRate" layoutX="50.0" layoutY="488.0" mnemonicParsing="false" text="Beta" />
+            <CheckBox fx:id="CheckBoxGammaRate" layoutX="103.0" layoutY="486.0" mnemonicParsing="false" text="Gamma" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
